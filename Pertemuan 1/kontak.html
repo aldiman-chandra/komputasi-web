@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            padding: 0.5rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d41273;
+            border-bottom: 2px solid #E90074;
+        }
+
+        .container {
+            padding: 2rem;
+            text-align: left;
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #E90074;
+            border-radius: 4px;
+            background-color: white;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #E90074;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Kontak Kami</h1>
+
+        <div class="form-container">
+            <form action="">
+                <label for="name">Nama:</label>
+                <input type="text" id="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="gender-male" name="gender" value="male"> Laki-laki <br>
+                <input type="radio" id="gender-female" name="gender" value="female"> Perempuan <br>
+
+                <label>Hobby:</label>
+                <input type="checkbox" id="hobby-taekwondo" name="hobby" value="taekwondo"> Taekwondo <br>
+                <input type="checkbox" id="hobby-swimming" name="hobby" value="swimming"> Renang <br>
+                <input type="checkbox" id="hobby-ml" name="hobby" value="ml"> Mobile Legend <br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
